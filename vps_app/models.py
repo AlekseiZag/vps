@@ -16,7 +16,3 @@ class VPS(models.Model):
     ram = models.IntegerField(verbose_name="Объем RAM")
     hdd = models.IntegerField(verbose_name="Объем HDD")
     status = models.CharField(max_length=7, choices=VPS_STATUS, default="started", verbose_name="Статус сервера")
-
-    class Meta:
-        abstract = True
-        ordering = ['-created_at', '-updated_at']

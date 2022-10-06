@@ -4,7 +4,7 @@ from vps_app.models import VPS
 
 
 class VPSSerializer(serializers.ModelSerializer):
-    """Сериализатор модели VPS"""
+    """VPS model Serializer"""
 
     class Meta:
         model = VPS

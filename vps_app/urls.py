@@ -1,10 +1,9 @@
 from django.urls import path
 
-from vps_app.views import VPSView
+from vps_app.views import VPSView, VPSListView
 
-app_name = 'krod_v3'
 urlpatterns = [
-    path('vps/', VPSView.as_view()),
+    path('vps/', VPSListView.as_view()),
     path('vps/<str:uid>/', VPSView.as_view()),
 
 ]
